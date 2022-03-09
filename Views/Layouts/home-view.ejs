@@ -1,55 +1,138 @@
 <%- include("../blocs/header-view") %>
 
 <a href="" id="home"></a>
+<div class="container header__container">
+    <h1>Justin Gaultier</h1>
+    <h5 class="text-light">Alternance développement web</h5>
+    <img src="/assets/Img/pp.png" alt="">
+</div>
+
+<a href="" id="profil"></a>
 <section>
     <div class="container header__container">
-        <h1>Justin Gaultier</h1>
-        <h5 class="text-light">Alternance développement web</h5>
+        <h5 class="text-light">Qui suis-je ?</h5>
+        <h2>Présentation :</h2>
     </div>
     <div class="card">
-        <img src="/assets/Img/pp.png" alt="">
+        <img src="/assets/Img/pp2.gif" alt="">
         <div class="card_content first">
-            <h2>Présentation :</h2>
-            <p> Bonjour ! Passionné d’informatique depuis 6 ans, je suis actuellement en 2ème année de BTS SIO option SLAM
-                (Services Informatiques aux Organisation). Je suis à la recherche d’une alternance en tant que 
+            <p> Bonjour ! Passionné d’informatique depuis 6 ans, je suis actuellement en 2ème année de BTS SIO option
+                SLAM
+                (Services Informatiques aux Organisation). Je suis à la recherche d’une alternance en tant que
                 Concepteur Développeur d’Applications pour l'année scolaire 2022 - 2023.</p>
         </div>
     </div>
-
-</section>
-<a href="" id="profil"></a>
-<section>
     <div class="container header__container">
         <h5 class="text-light">Mon parcours</h5>
         <h2>Mes experiences</h2>
 
         <div class="grid">
-            <div class="grid-row1"><button class="grid-button"><a class="nodeco" href="https://www.linkedin.com/in/justin-gaultier-07318b221" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a></div>
-            <div class="grid-row2"><button class="grid-button"><a href="https://github.com/NitsuGG" target="_blank" class="nodeco"><i class="fa-brands fa-github"></i> Github</button></a></div>
-            <div class="grid-row3"><button class="grid-button"><i class="fa-solid fa-download"></i> Mon CV</button></div>
-            
+            <div class="grid-row1">
+                <button class="grid-button"><a class="nodeco" href="https://www.linkedin.com/in/justin-gaultier-07318b221" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
+                <button class="grid-button"><a href="https://github.com/NitsuGG" target="_blank" class="nodeco"><i class="fa-brands fa-github"></i> Github</button></a>
+                <button class="grid-button"><i class="fa-solid fa-download"></i> Mon CV</button>
+            </div>
             <div class="grid-row4">
                 <div class="grid-exp">
-                    <li>azeezaazea</li>
-                    <li>azeezaazea</li>
-                    <li>azeezaazea</li>
-                    <li>azeezaazea</li>
-                    <li>azeezaazea</li>
-                    <li>azeezaazea</li>
-                    <li>azeezaazea</li> 
+                    <h3><i class="fa-solid fa-globe"></i> Stage</h3>
+                    <li class="exp">Envie de voyage Janvier 2022
+                    <li style="padding:0 0 0 20px;"> Maintenance</li>
+                    <li style="padding:0 0 0 20px;"> Wordpress</li>
+                    <li style="padding:0 0 0 20px;"> PHP</li>
+                    <li style="padding:0 0 0 20px;"> CSS</li>
+                    </li>
+                    <br>
+                    <li class="exp">FMER Septembre 2020
+                    <li style="padding:0 0 0 20px;"> Arduino</li>
+                    <li style="padding:0 0 0 20px;"> C++</li>
+                    </li>
+                </div>
+            </div>
+            <div class="grid-row5">
+                <div class="grid-exp">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Formation</h3>
+                    <li class="exp">BTS SIO SLAM
+                    <li style="padding:0 0 0 20px;"> Lycée Saint Notre Dame de la Paix</li>
+                    <li style="padding:0 0 0 20px;"> Lorient</li>
+                    <li style="padding:0 0 0 20px;"> 2021 - 2022</li>
+                    </li>
+                    <br>
+                    <li class="exp">BTS SNIR 2021
+                    <li style="padding:0 0 0 20px;"> Lycée Saint Joseph la Salle</li>
+                    <li style="padding:0 0 0 20px;"> Lorient</li>
+                    <li style="padding:0 0 0 20px;"> 2019 - 2021</li>
+                    </li>
+                    <br>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
+<a href="" id="skills"></a>
+<section>
+    <div class="container header__container">
+        <h5 class="text-light">Compétences acquise en cours ou sur mon temps libre</h5>
+        <h2>Mes Compétences</h2>
+    </div>
     <div class="card">
-        <div class="card_content">
-            azeaze
-        </div>
+            <span><i class="fa-brands fa-html5"></i> HTML : </span>
+            <div class="gauge">
+                 <div class="gauge-completion" data-completion="75"></div>
+            </div>
+            <span><i class="fa-brands fa-css3"></i> CSS : </span>
+            <div class="gauge">
+                 <div class="gauge-completion" data-completion="40"></div>
+            </div>
+            <span><i class="fa-brands fa-js"></i> JavaScript : </span>
+            <div class="gauge">
+                 <div class="gauge-completion" data-completion="25"></div>
+            </div>
+            <span><i class="fa-brands fa-node-js"></i>Express : </span>
+            <div class="gauge">
+                 <div class="gauge-completion" data-completion="20"></div>
+            </div>
+            <span><i class="fa-brands fa-node-js"></i>EJS : </span>
+            <div class="gauge">
+                <div class="gauge-completion" data-completion="20"></div>
+            </div>
+    </div>
+    <div class="card">
+            <span><i class="fa-brands fa-php"></i> PHP : </span>
+            <div class="gauge">
+                 <div class="gauge-completion" data-completion="60"></div>
+            </div>
+            <span><i class="fa-solid fa-database"></i> SQL : </span>
+            <div class="gauge">
+                 <div class="gauge-completion" data-completion="75"></div>
+            </div>
+            <span><i class="fa-brands fa-node-js"></i> NodeJS : </span>
+            <div class="gauge">
+                 <div class="gauge-completion" data-completion="40"></div>
+            </div>
+            <span><i class="fa-solid fa-fire-flame-curved"></i> Code Igniter : </span>
+            <div class="gauge">
+                <div class="gauge-completion" data-completion="50"></div>
+            </div>
+            <span><i class="fa-brands fa-laravel"></i> Laravel : </span>
+            <div class="gauge">
+                 <div class="gauge-completion" data-completion="0"></div>
+            </div>
     </div>
 
-
 </section>
-<a href="" id="skills"></a>
+
 <a href="" id="projects"></a>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<script>
+    var gauges = document.getElementsByClassName("gauge-completion");
+
+    for (let i = 0; i < gauges.length; i++) {
+        let completion = gauges[i].dataset.completion;
+        gauges[i].style.width = completion + "%";
+        gauges[i].innerHTML = completion + "%";
+    }
+
+</script>
 <%- include("../blocs/footer-view") %>
