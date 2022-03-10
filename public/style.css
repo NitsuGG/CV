@@ -65,6 +65,9 @@ section > .header__container > h2{
     color: var(--color-light);
     margin-top: 7rem;
 }
+.text-light2{
+    color: var(--color-light);
+}
 
 a{
     color: var(--color-primary);
@@ -118,7 +121,7 @@ nav{
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
-    background-color: var(--color-bg-variant) ;
+    background-color: rgba(37, 40, 51, 0.514) ;
 }
 
 nav a{
@@ -273,3 +276,76 @@ img{
     border-radius: 10px;
     font-size: 12px;
 }
+
+
+/* ===================Timeline================= */
+
+.wrapper{
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.wrapper .center-line{
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrapper .row-lang{
+    display: flex;
+}
+
+.wrapper .row-lang section{
+    margin-top: 0px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: calc(50% - 80px);
+    padding: 20px;
+    position: relative;
+}
+
+.wrapper .row-lang:nth-child(odd){
+    justify-content: flex-end;
+}
+.wrapper .row-lang:nth-child(even){
+    justify-content: flex-start;
+}
+
+.row-lang section .lang-details, .row-lang section .lang-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row-lang section .lang-details .lang-title{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.row-lang section p{
+    margin: 10px 0 17px 0;   
+}
+
+.wrapper .row-lang section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: var(--color-white);
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.row-lang:nth-child(even) section::before{
+    right: -7px;
+}
+
+.row-lang:nth-child(odd) section::before{
+    left: -7px;
+}
+

@@ -1,5 +1,4 @@
 let express = require('express')
-const jauge = require('./public/Script/jauge')
 let app = express()
 
 app.use(express.urlencoded({ extended: false})) //Utilisé pour receptionné les donnée d'un formulaire

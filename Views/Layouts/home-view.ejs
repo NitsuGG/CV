@@ -1,12 +1,12 @@
 <%- include("../blocs/header-view") %>
 
 <a href="" id="home"></a>
-<div class="container header__container">
-    <h1>Justin Gaultier</h1>
-    <h5 class="text-light">Alternance développement web</h5>
-    <img src="/assets/Img/pp.png" alt="">
-</div>
-
+<section>
+    <div class="container header__container">
+        <h1>Justin Gaultier</h1>
+        <h5 class="text-light2">Alternance développement web</h5>
+    </div>
+</section>
 <a href="" id="profil"></a>
 <section>
     <div class="container header__container">
@@ -22,6 +22,9 @@
                 Concepteur Développeur d’Applications pour l'année scolaire 2022 - 2023.</p>
         </div>
     </div>
+</section>
+<a href="" id="study"></a>
+<section>
     <div class="container header__container">
         <h5 class="text-light">Mon parcours</h5>
         <h2>Mes experiences</h2>
@@ -75,49 +78,50 @@
         <h5 class="text-light">Compétences acquise en cours ou sur mon temps libre</h5>
         <h2>Mes Compétences</h2>
     </div>
-    <div class="card">
-            <span><i class="fa-brands fa-html5"></i> HTML : </span>
-            <div class="gauge">
-                 <div class="gauge-completion" data-completion="75"></div>
-            </div>
-            <span><i class="fa-brands fa-css3"></i> CSS : </span>
-            <div class="gauge">
-                 <div class="gauge-completion" data-completion="40"></div>
-            </div>
-            <span><i class="fa-brands fa-js"></i> JavaScript : </span>
-            <div class="gauge">
-                 <div class="gauge-completion" data-completion="25"></div>
-            </div>
-            <span><i class="fa-brands fa-node-js"></i>Express : </span>
-            <div class="gauge">
-                 <div class="gauge-completion" data-completion="20"></div>
-            </div>
-            <span><i class="fa-brands fa-node-js"></i>EJS : </span>
-            <div class="gauge">
-                <div class="gauge-completion" data-completion="20"></div>
-            </div>
-    </div>
-    <div class="card">
-            <span><i class="fa-brands fa-php"></i> PHP : </span>
-            <div class="gauge">
-                 <div class="gauge-completion" data-completion="60"></div>
-            </div>
-            <span><i class="fa-solid fa-database"></i> SQL : </span>
-            <div class="gauge">
-                 <div class="gauge-completion" data-completion="75"></div>
-            </div>
-            <span><i class="fa-brands fa-node-js"></i> NodeJS : </span>
-            <div class="gauge">
-                 <div class="gauge-completion" data-completion="40"></div>
-            </div>
-            <span><i class="fa-solid fa-fire-flame-curved"></i> Code Igniter : </span>
-            <div class="gauge">
-                <div class="gauge-completion" data-completion="50"></div>
-            </div>
-            <span><i class="fa-brands fa-laravel"></i> Laravel : </span>
-            <div class="gauge">
-                 <div class="gauge-completion" data-completion="0"></div>
-            </div>
+    
+    <div class="wrapper">
+        <div class="center-line"></div>
+        <div class="row-lang">
+            <section>
+                <div class="lang-details">
+                    <span class="lang-title">Titre 1</span>
+                    <span>date</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, nemo.</p>
+                <div class="lang-bottom">
+                    <a href="#">Read more</a>
+                    <i>- Justin Gaultier</i>
+                </div>
+            </section>
+        </div>
+
+        <div class="row-lang">
+            <section>
+                <div class="lang-details">
+                    <span class="lang-title">Titre 2</span>
+                    <span>date2</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, nemo.</p>
+                <div class="lang-bottom">
+                    <a href="#">Read more</a>
+                    <i>- Justin Gaultier</i>
+                </div>
+            </section>
+        </div>
+        
+        <div class="row-lang">
+            <section>
+                <div class="lang-details">
+                    <span class="lang-title">Titre 3</span>
+                    <span>date3</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, nemo.</p>
+                <div class="lang-bottom">
+                    <a href="#">Read more</a>
+                    <i>- Justin Gaultier</i>
+                </div>
+            </section>
+        </div>
     </div>
 
 </section>
@@ -125,14 +129,4 @@
 <a href="" id="projects"></a>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<script>
-    var gauges = document.getElementsByClassName("gauge-completion");
-
-    for (let i = 0; i < gauges.length; i++) {
-        let completion = gauges[i].dataset.completion;
-        gauges[i].style.width = completion + "%";
-        gauges[i].innerHTML = completion + "%";
-    }
-
-</script>
 <%- include("../blocs/footer-view") %>
