@@ -284,6 +284,7 @@ img{
     max-width: 1080px;
     margin: 50px auto;
     padding: 0 20px;
+    position: relative;
 }
 
 .wrapper .center-line{
@@ -293,6 +294,7 @@ img{
     background: #fff;
     left: 50%;
     transform: translateX(-50%);
+    top: 20px;
 }
 
 .wrapper .row-lang{
@@ -349,3 +351,63 @@ img{
     left: -7px;
 }
 
+.row-lang section .icon,
+.center-line .scroll-icon{
+    position: absolute;
+    background-color: var(--color-primary);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.row-lang:nth-child(even) section .icon{
+    right: -60px;
+    top: 7px;
+}
+.row-lang:nth-child(odd) section .icon{
+    left: -60px;
+    top: 7px;
+}
+
+.center-line .scroll-icon{
+    transition: none;
+    color: var(--color-white);
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center-line .scroll-icon:hover{
+    color: var(--color-white);
+}
+
+
+@media (max-width: 772px) {
+    .wrapper .center-line{
+        left: 30px;
+    }
+
+    .wrapper .row-lang{
+        margin: 30px 0 3px 60px;
+    }
+
+    .wrapper .row-lang section{
+        width: 100%;
+    }
+
+    .row-lang:nth-child(even) section::before{
+        left: -7px;
+    }
+
+    .row-lang:nth-child(even) section .icon{
+        left: -70px;
+        top: 5px;
+    }
+    .row-lang:nth-child(odd) section .icon{
+        left: -70px;
+        top: 5px;
+    }
+}
