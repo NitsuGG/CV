@@ -444,7 +444,7 @@ img{
 }
 
 #projects .glass-card{
-    max-width: 386px;
+    max-width: 400px;
     padding: 0px;
     border-radius: 5px;
     margin: auto;
@@ -453,11 +453,11 @@ img{
 
 #projects .glass-img{
     border-radius: 5px 5px 0px 0px;
-    max-width: 386px;
+    max-width: 400px;
 }
 
-#projects .card-text, #project h3{
-    padding: 5px;
+#projects .card-text, #projects h3{
+    padding: 15px;
     margin: 0px;
 }
 
